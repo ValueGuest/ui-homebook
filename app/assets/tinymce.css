@@ -1,0 +1,92 @@
+body{
+  font-family: 'Times New Roman';
+  font-size: 18px; 
+}
+.variable{
+  cursor: default;
+  background-color: #65b9dd;
+  color: #FFF;
+  padding: 4px 14px;
+  border-radius: 3px;
+  /*font-weight: bold;*/
+  font-style: normal;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 12px;
+}
+.nameTag{
+  color: gray;
+  font-size: 12px;
+  display:inline-block!important;
+}
+#tagId-guestSignature, .signaturePlaceholder{
+  background: none;
+    outline: 2px dashed #b4d7ff;
+    color: #707070;
+    font-size: 16px;
+    text-align: center;
+    padding: 30px 14px!important;
+}
+
+.signatureDatePlaceholder{
+  background: none;
+    outline: 2px dashed #b4d7ff;
+    color: #707070;
+    font-size: 16px;
+    text-align: center;
+    padding: 4px 14px!important;
+}
+
+
+.signatureImage{
+  width:150px;
+}
+.pagebreak{
+  border-top:1px solid rgb(123, 123, 123);
+  position:relative;
+  height:1px;
+}
+.pageBreakText{
+  position:relative;
+  color:rgb(123, 123, 123);
+  width:100%;
+  text-align: center;
+  top:-12px;
+  font-size: 15px;;
+}
+.pageBreakBack{
+  background: white;
+    display: inline;
+    padding: 9px;
+}
+.mceEditable{
+  /*background-color: yellow;*/
+  border-bottom: 1px solid #8c8cd9;
+  text-align:center;
+  min-width: 150px;
+  padding-bottom:0px;
+  display: inline-block;
+  margin:0px 5px;
+  font-weight: bold;
+}
+.mce-content-body [contentEditable=false] [contentEditable=true]:hover,.mce-content-body [contentEditable=false] [contentEditable=true]:focus{
+  outline:none; 
+}
+.mce-content-body{
+  line-height: 20px;
+  
+}
+.mce-content-body:focus-visible {
+  outline: none;
+}
+.signatures{
+  display:none;
+}
+.dateSignatures{
+  display:none;
+}
+
+a{
+  text-decoration: underline;
+  color: blue;
+}

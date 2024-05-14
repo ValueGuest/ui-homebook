@@ -1,0 +1,51 @@
+{
+  "name": "ValueGuest",
+  "short_name": "ValueGuest",
+  "theme_color": "#9f3658",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/app/",
+  "icons": [
+    {
+      "src": "assets/icon/logoVG.gif",
+      "sizes": "72x72",
+      "type": "image/gif"
+    },
+    {
+      "src": "assets/icon/logoVG.gif",
+      "sizes": "96x96",
+      "type": "image/gif"
+    },
+    {
+      "src": "assets/icon/logoVG.gif",
+      "sizes": "128x128",
+      "type": "image/gif"
+    },
+    {
+      "src": "assets/icon/logoVG.gif",
+      "sizes": "144x144",
+      "type": "image/gif"
+    },
+    {
+      "src": "assets/icon/logoVG.gif",
+      "sizes": "152x152",
+      "type": "image/gif"
+    },
+    {
+      "src": "assets/icon/logoVG.gif",
+      "sizes": "192x192",
+      "type": "image/gif"
+    },
+    {
+      "src": "assets/icon/logoVG.gif",
+      "sizes": "384x384",
+      "type": "image/gif"
+    },
+    {
+      "src": "assets/icon/logoVG.gif",
+      "sizes": "512x512",
+      "type": "image/gif"
+    }
+  ]
+}
