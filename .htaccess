@@ -40,7 +40,7 @@ RewriteRule . ./indexHostNew.php [L]
 RewriteCond %{HTTP_HOST} ^staydev.valueguest.com$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . ./staydev/indexHost.php [L]
+RewriteRule . /indexHost.php [L]
 
 RewriteCond %{HTTP_HOST} ^stayuat.valueguest.com$
 RewriteCond %{REQUEST_FILENAME} !-f
