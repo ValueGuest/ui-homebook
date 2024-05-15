@@ -1,0 +1,134 @@
+<IfModule mod_rewrite.c>
+
+
+
+RewriteCond %{REQUEST_URI} /aiuto/alloggiatiweb/cose-il-portale-alloggiati-web-e-come-funziona/
+RewriteRule .* https://valueguest.com/concierge/ [R=301,L]
+RewriteCond %{REQUEST_URI} /aiuto/alloggiatiweb/cose-il-portale-alloggiati-web-e-come-funziona
+RewriteRule .* https://valueguest.com/concierge/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^staydev.valueguest.com$
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule .* https://staydev.valueguest.com/search [L]
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^stay.valueguest.com$
+RewriteRule .* https://stay.valueguest.com%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteRule .* https://valueguest.com%{REQUEST_URI} [R=301,L]
+
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_URI} \/chisiamo/
+RewriteRule .* https://valueguest.com/chi-siamo/ [R=301,L]
+RewriteCond %{REQUEST_URI} \/app\/Casadelsole
+RewriteRule .* https://stay.valueguest.com/Casadelsole/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^stay.valueguest.com$
+RewriteCond %{REQUEST_URI} \/app\/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .*app(.*) https://stay.valueguest.com/$1/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^stay.valueguest.com$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . ./indexHostNew.php [L]
+
+
+
+RewriteCond %{HTTP_HOST} ^staydev.valueguest.com$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /indexHost.php [L]
+
+RewriteCond %{HTTP_HOST} ^stayuat.valueguest.com$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . ./indexHostUat.php [L]
+
+RewriteCond %{HTTP_HOST} ^staypreprod.valueguest.com$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . ./indexHostPreprod.php [L]
+
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_URI} \/app/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* https://app.valueguest.com/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} \/dev/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /dev/index.html [L]
+
+RewriteCond %{REQUEST_URI} \/uat/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /uat/index.php [L]
+
+RewriteCond %{REQUEST_URI} \/preprod/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /preprod/index.html [L]
+
+</IfModule>
+
+# BEGIN LSCACHE
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+<IfModule LiteSpeed>
+RewriteEngine on
+CacheLookup on
+RewriteRule .* - [E=Cache-Control:no-autoflush]
+RewriteRule \.litespeed_conf\.dat - [F,L]
+
+### marker ASYNC start ###
+RewriteCond %{REQUEST_URI} /wp-admin/admin-ajax\.php
+RewriteCond %{QUERY_STRING} action=async_litespeed
+RewriteRule .* - [E=noabort:1]
+### marker ASYNC end ###
+
+### marker CACHE RESOURCE start ###
+RewriteRule wp-content/.*/[^/]*(responsive|css|js|dynamic|loader|fonts)\.php - [E=cache-control:max-age=3600]
+### marker CACHE RESOURCE end ###
+
+### marker DROPQS start ###
+CacheKeyModify -qs:fbclid
+CacheKeyModify -qs:gclid
+CacheKeyModify -qs:utm*
+CacheKeyModify -qs:_ga
+### marker DROPQS end ###
+
+</IfModule>
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+# END LSCACHE
+# BEGIN NON_LSCACHE
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+# END NON_LSCACHE
+# BEGIN WordPress
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/jpg "access plus 1 year"
+	ExpiresByType image/jpeg "access plus 1 year"
+	ExpiresByType image/gif "access plus 1 year"
+	ExpiresByType image/png "access plus 1 year"
+	ExpiresByType text/css "access plus 1 month"
+	ExpiresByType application/pdf "access plus 1 month"
+	ExpiresByType text/javascript "access plus 1 month"
+	ExpiresByType image/x-icon "access plus 1 year"
+	ExpiresDefault "access plus 1 weeks"
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
