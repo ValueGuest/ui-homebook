@@ -114,7 +114,7 @@ dataAllGuestbooks = <?php echo $dataAllGuestbooks; ?>;
 
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
-<script src="app/runtime.76bd31c8a2e121ad.js" type="module"></script><script src="app/polyfills.593235f0c5796786.js" type="module"></script><script src="app/main.b1bfe1aecfd8cc9b.js" type="module"></script>
+<script src="runtime.49a9aa1ff9ea0cc0.js" type="module"></script><script src="polyfills.593235f0c5796786.js" type="module"></script><script src="main.b1bfe1aecfd8cc9b.js" type="module"></script>
 
 
 </body></html>
