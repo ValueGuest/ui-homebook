@@ -25,15 +25,9 @@ RewriteCond %{REQUEST_URI} \/app\/Casadelsole
 RewriteRule .* https://stay.valueguest.com/Casadelsole/ [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^stay.valueguest.com$
-RewriteCond %{REQUEST_URI} \/app\/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule .*app(.*) https://stay.valueguest.com/$1/ [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^stay.valueguest.com$
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . ./indexHostNew.php [L]
+RewriteRule . /indexHost.php [L]
 
 
 
