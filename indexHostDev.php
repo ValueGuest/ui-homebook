@@ -101,14 +101,14 @@ dataAllGuestbooks = <?php echo $dataAllGuestbooks; ?>;
   </script>
 <script async="" src="./assets/cookieconsent.min.js"></script>
 <link rel="stylesheet" href="./assets/cookieconsent.min.css"/>
-  <link rel="manifest" href="/app/manifest.webmanifest">
+  <link rel="manifest" href="/manifest.webmanifest">
  <meta name="theme-color" content="#9f3658">
 
  <!-- <script src="https://js.stripe.com/v3/"></script> -->
   
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="/app/styles.6c85e0edbe90b4d36842.css">
+<link rel="stylesheet" href="/styles.6c85e0edbe90b4d36842.css">
 </head>
 <body>
 

@@ -112,7 +112,7 @@ if($nameURL == '.well-known'){
     </script>
   <script async="" src="./assets/cookieconsent.min.js"></script>
   <link rel="stylesheet" href="./assets/cookieconsent.min.css"/>
-    <link rel="manifest" href="/app/manifest.webmanifest">
+    <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#9f3658">
 
   <!-- <script src="https://js.stripe.com/v3/"></script> -->
