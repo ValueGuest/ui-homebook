@@ -97,7 +97,7 @@ dataAllGuestbooks = <?php echo $dataAllGuestbooks; ?>;
     gtag('js', new Date());
   
     //gtag('config', 'UA-121444164-3');
-    window.global = window; //AIzaSyDGCjsuOBlH5ryzpyuHhmWoM9LdjObHDt0
+    window.global = window;
   </script>
 <script async="" src="./assets/cookieconsent.min.js"></script>
 <link rel="stylesheet" href="./assets/cookieconsent.min.css"/>
@@ -114,7 +114,7 @@ dataAllGuestbooks = <?php echo $dataAllGuestbooks; ?>;
 
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
-<script src="runtime.27140cfd90fc24e8.js" type="module"></script><script src="polyfills.593235f0c5796786.js" type="module"></script><script src="main.fef493b8b5a465c1.js" type="module"></script>
+<script src="runtime.2226a9c9c5fa5bb4.js" type="module"></script><script src="polyfills.593235f0c5796786.js" type="module"></script><script src="main.ce3897abdf60e2ed.js" type="module"></script>
 
 
 </body></html>
