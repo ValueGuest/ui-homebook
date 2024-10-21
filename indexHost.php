@@ -87,9 +87,18 @@ if($nameURL == '.well-known'){
   /* if(navigator && navigator.serviceWorker) {
     navigator.serviceWorker.getRegistrations().then( function(registrations) { for(let registration of registrations) { registration.unregister(); } }); 
     }*/
-    var gaId = 'UA-121444164-5';
   </script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id="+gaId></script>
+   
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?php $websiteAdditionalData['seoParams']['gtmId'] ?>"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '<?php $websiteAdditionalData['seoParams']['gtmId'] ?>');
+</script>
+
     <script>
     nameURL = '<?php echo $nameURL;?>';
     <?php if($dataAllGuestbooks!=null) {
@@ -103,9 +112,6 @@ if($nameURL == '.well-known'){
     
     <?php }
     ?>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
     
       //gtag('config', 'UA-121444164-3');
       window.global = window;
@@ -145,7 +151,7 @@ if($nameURL == '.well-known'){
 <body>
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
-<script src="runtime.a80f9ecddd101996.js" type="module"></script><script src="polyfills.593235f0c5796786.js" type="module"></script><script src="main.0e34ec6572a9ab53.js" type="module"></script>
+<script src="runtime.a098d50884c24ff4.js" type="module"></script><script src="polyfills.593235f0c5796786.js" type="module"></script><script src="main.9dfaedb7b1399512.js" type="module"></script>
 
 
 </body></html><?php } ?>
