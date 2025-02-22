@@ -90,13 +90,13 @@ if($nameURL == '.well-known'){
   </script>
    
    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=<?php $websiteAdditionalData['seoParams']['gtmId'] ?>"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $websiteAdditionalData['seoParams']['gtmId'] ?>"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '<?php $websiteAdditionalData['seoParams']['gtmId'] ?>');
+  gtag('config', '<?php echo $websiteAdditionalData['seoParams']['gtmId'] ?>');
 </script>
 
     <script>
@@ -151,7 +151,7 @@ if($nameURL == '.well-known'){
 <body>
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
-<script src="runtime.6d68467ec1f6f80d.js" type="module"></script><script src="polyfills.593235f0c5796786.js" type="module"></script><script src="main.16e9540813287074.js" type="module"></script>
+<script src="runtime.b1e09e519a99f410.js" type="module"></script><script src="polyfills.593235f0c5796786.js" type="module"></script><script src="main.16e9540813287074.js" type="module"></script>
 
 
 </body></html><?php } ?>
