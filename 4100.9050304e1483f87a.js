@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[4100],{4100:(d,a,_)=>{_.d(a,{G:()=>e});var u=_(36895),M=_(89383),t=_(60434),o=_(94650);let e=(()=>{class n{}return n.\u0275fac=function(E){return new(E||n)},n.\u0275mod=o.\u0275\u0275defineNgModule({type:n}),n.\u0275inj=o.\u0275\u0275defineInjector({imports:[u.CommonModule,t.Pc,M.aw]}),n})()}}]);
