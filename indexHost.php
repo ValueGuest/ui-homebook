@@ -152,7 +152,7 @@ if($nameURL == '.well-known'){
 <body>
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
-<script src="runtime.1dcadd2f63635392.js" type="module"></script><script src="polyfills.593235f0c5796786.js" type="module"></script><script src="main.65e7955c7c57588e.js" type="module"></script>
+<script src="runtime.6935f7e0aadfaa07.js" type="module"></script><script src="polyfills.593235f0c5796786.js" type="module"></script><script src="main.65e7955c7c57588e.js" type="module"></script>
 
 
 </body></html><?php } ?>
